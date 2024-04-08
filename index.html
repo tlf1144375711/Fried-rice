@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小谭炒饭</title>
+</head>
+<!-- <link href='mo.ttf' rel='stylesheet'> -->
+<style>
+    @font-face {
+        font-family: 'mo';
+        src: url('./mo.ttf');
+    }
+    body {
+        font-family: 'mo';
+        background-image: url('./bg.webp');
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: contain;
+        background-color: black;
+        background-position: right top;
+        margin-top: 4rem;
+        padding: 0;
+        margin-right: 2rem;
+        text-align: right;
+        color: white;
+    }
+
+    body>div {
+        margin-bottom: 5rem;
+    }
+
+    table {
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+    }
+
+    th {
+        text-align: right;
+    }
+
+    tr {
+        height: 2rem;
+    }
+
+    td {
+        padding: 1rem;
+        padding-right: 0rem;
+    }
+
+
+    h1 {
+        margin-bottom: 3rem;
+
+    }
+
+    #content {
+        margin-bottom: 1rem;
+        width: 10rem;
+        height: 3rem;
+    }
+
+    #submit {
+
+        width: 5rem;
+    }
+</style>
+
+<body>
+    <div class="intro">
+        <h1>小谭炒饭</h1>
+        <h2>菜单</h2>
+        <table>
+            <tr>
+                <td>蛋炒饭</td>
+                <td>8元</td>
+            </tr>
+            <tr>
+                <td>蛋+火腿炒饭</td>
+                <td>9元</td>
+            </tr>
+        </table>
+        <p>联系谭师傅：17112663884</p>
+    </div>
+    <div class="procurement">
+        <h2>原料表</h2>
+        <table>
+            <tr>
+                <th>料</th>
+                <th>价</th>
+                <th>源</th>
+            </tr>
+            <tr>
+                <td>米</td>
+                <td>五常大米2.5元/500g</td>
+                <td>比优特超市</td>
+            </tr>
+            <tr>
+                <td>鸡蛋</td>
+                <td>0.5元/颗</td>
+                <td>多多买菜</td>
+            </tr>
+        </table>
+    </div>
+    <div class="advice">
+        <h2>建言</h2>
+        <p>欢迎留言，谭师傅会改进的。</p>
+        <form action="http://localhost:8080" method="post">
+            <div>
+                <input type="text" name="content" id="content">
+            </div>
+            <div>
+                <input type="submit" value="留言" id="submit">
+            </div>
+        </form>
+    </div>
+    <div class="income">
+        <h2>近期入帐</h2>
+        <p>3.9 300元</p>
+        <p>3.8 280元</p>
+        <p>3.6 310元</p>
+        <p>3.5 250元</p>
+    </div>
+</body>
+
+</html>
